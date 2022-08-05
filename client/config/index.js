@@ -1,11 +1,11 @@
 const config = {
-  projectName: 'LittleYang',
+  projectName: 'myApp',
   date: '2022-8-5',
   designWidth: 750,
   deviceRatio: {
-    640: 2.34 / 2,
-    750: 1,
-    828: 1.81 / 2
+    '640': 2.34 / 2,
+    '750': 1,
+    '828': 1.81 / 2
   },
   sourceRoot: 'src',
   outputRoot: 'dist',

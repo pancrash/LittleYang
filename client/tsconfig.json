@@ -15,29 +15,14 @@
     "sourceMap": true,
     "baseUrl": ".",
     "rootDir": ".",
-    "jsx": "react",
+    "jsx": "preserve",
+    "jsxFactory": "Taro.createElement",
     "allowJs": true,
-    "types": ["miniprogram-api-typings"],
     "resolveJsonModule": true,
     "typeRoots": [
-      "node_modules/@types",
-      "global.d.ts"
-    ],
-    "paths": {
-      "@/*": [
-        "src/*"
-      ],
-      "@utils/*": ["./src/utils/*"],
-      "@hooks/*": ["./src/hooks/*"],
-      "@assets/*": ["./src/assets/*"],
-      "@services/*": ["./src/services/*"],
-      "@enums/*": ["./src/enums/*"],
-      "@consts/*": ["./src/consts/*"]
-    },
+      "node_modules/@types"
+    ]
   },
-  "exclude": [
-    "node_modules",
-    "dist"
-  ],
+  "include": ["./src", "global.d.ts"],
   "compileOnSave": false
 }
