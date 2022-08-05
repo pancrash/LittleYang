@@ -1,0 +1,42 @@
+{
+  "extends": [
+    "taro/react", "eslint:recommended", "plugin:react/recommended", "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "no-const-assign": 2, // 禁止修改const声明的变量
+    "space-infix-ops": 1,
+    "space-before-function-paren": 2,
+    "indent": ["error", 2], //缩进2格
+    "quotes": [2, "single"],
+    "eqeqeq": 2, // 必须使用全等
+    "import/first": "off",
+    "comma-spacing": [
+      1,
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "arrow-spacing": [
+      1,
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": ["external", "builtin", "parent", "sibling", "index"],
+        "newlines-between": "always"
+      }
+    ],
+    "no-multiple-empty-lines": [2, {
+      "max": 2
+    }] // 空行最多不能超过1行
+  }
+}

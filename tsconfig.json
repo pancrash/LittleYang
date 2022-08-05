@@ -1,37 +1,43 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
+    "target": "es2017",
+    "module": "commonjs",
+    "removeComments": false,
+    "preserveConstEnums": true,
     "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "importHelpers": true,
-    "jsx": "react-jsx",
-    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "noImplicitAny": false,
+    "allowSyntheticDefaultImports": true,
+    "outDir": "lib",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
     "sourceMap": true,
-    "baseUrl": "./",
-    "strict": true,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "jsx": "react",
+    "allowJs": true,
+    "types": ["miniprogram-api-typings"],
+    "resolveJsonModule": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "global.d.ts"
+    ],
     "paths": {
-      "@/*": ["src/*"],
-      "@@/*": ["src/.umi/*"]
+      "@/*": [
+        "src/*"
+      ],
+      "@utils/*": ["./src/utils/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@services/*": ["./src/services/*"],
+      "@enums/*": ["./src/enums/*"],
+      "@consts/*": ["./src/consts/*"]
     },
-    "allowSyntheticDefaultImports": true
   },
-  "include": [
-    "mock/**/*",
-    "src/**/*",
-    "config/**/*",
-    ".umirc.ts",
-    "typings.d.ts"
-  ],
   "exclude": [
     "node_modules",
-    "lib",
-    "es",
-    "dist",
-    "typings",
-    "**/__test__",
-    "test",
-    "docs",
-    "tests"
-  ]
+    "dist"
+  ],
+  "compileOnSave": false
 }

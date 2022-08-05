@@ -1,32 +1,16 @@
 {
-  "name": "LittleYang",
+  "name": "little-yang",
   "version": "1.0.0",
   "private": true,
   "description": "LittleYang",
   "templateInfo": {
-    "name": "taro-ui",
+    "name": "taro-hooks",
     "typescript": true,
     "css": "less"
   },
   "scripts": {
-    "build:weapp": "taro build --type weapp",
-    "build:swan": "taro build --type swan",
-    "build:alipay": "taro build --type alipay",
-    "build:tt": "taro build --type tt",
-    "build:h5": "taro build --type h5",
-    "build:rn": "taro build --type rn",
-    "build:qq": "taro build --type qq",
-    "build:jd": "taro build --type jd",
-    "build:quickapp": "taro build --type quickapp",
-    "dev:weapp": "npm run build:weapp -- --watch",
-    "dev:swan": "npm run build:swan -- --watch",
-    "dev:alipay": "npm run build:alipay -- --watch",
-    "dev:tt": "npm run build:tt -- --watch",
-    "dev:h5": "npm run build:h5 -- --watch",
-    "dev:rn": "npm run build:rn -- --watch",
-    "dev:qq": "npm run build:qq -- --watch",
-    "dev:jd": "npm run build:jd -- --watch",
-    "dev:quickapp": "npm run build:quickapp -- --watch"
+    "fix": "eslint --quiet --fix --ext .ts,.tsx src",
+    "start": "taro build --type weapp --watch"
   },
   "browserslist": [
     "last 3 versions",
@@ -36,32 +20,37 @@
   "author": "",
   "dependencies": {
     "@babel/runtime": "^7.7.7",
-    "@tarojs/cli": "3.4.9",
-    "@tarojs/components": "3.4.9",
-    "@tarojs/runtime": "3.4.9",
-    "@tarojs/taro": "3.4.9",
-    "@tarojs/plugin-framework-react": "3.4.9",
-    "lodash": "4.17.15",
-    "taro-ui": "^3.1.0-beta.2",
-    "@tarojs/react": "3.4.9",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "@tarojs/cli": "3.2.13",
+    "@tarojs/components": "3.2.13",
+    "@tarojs/react": "3.2.13",
+    "@tarojs/runtime": "3.2.13",
+    "@tarojs/taro": "3.2.13",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "taro-hooks": "latest",
+    "taro-ui": "^3.0.0-alpha"
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",
-    "@tarojs/mini-runner": "3.4.9",
-    "@tarojs/webpack-runner": "3.4.9",
-    "@types/webpack-env": "^1.13.6",
-    "babel-preset-taro": "3.4.9",
-    "eslint": "^8.12.0",
-    "eslint-config-taro": "3.4.9",
-    "stylelint": "9.3.0",
-    "@typescript-eslint/parser": "^5.20.0",
-    "@typescript-eslint/eslint-plugin": "^5.20.0",
-    "typescript": "^4.1.0",
+    "@tarojs/mini-runner": "3.2.13",
+    "@tarojs/webpack-runner": "3.2.13",
     "@types/react": "^17.0.2",
-    "eslint-plugin-react": "^7.8.2",
+    "@types/webpack-env": "^1.13.6",
+    "@typescript-eslint/eslint-plugin": "^4.15.1",
+    "@typescript-eslint/parser": "^4.15.1",
+    "babel-plugin-import": "^1.13.3",
+    "babel-preset-taro": "3.2.13",
+    "cross-env": "^7.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-taro": "3.2.13",
     "eslint-plugin-import": "^2.12.0",
-    "eslint-plugin-react-hooks": "^4.2.0"
+    "eslint-plugin-react": "^7.8.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "miniprogram-api-typings": "^3.4.6",
+    "stylelint": "9.3.0",
+    "typescript": "^4.2.3"
+  },
+  "engines": {
+    "node": ">=12.0.0"
   }
 }
